@@ -10,14 +10,30 @@ class App extends Component{
   constructor(props){
     super(props);
     this.state={
-      myTeam:[]
+      myTeam:[],
+      filteredTeam: []
     }
   }
+
+  componentDidMount(){
+    axios.get(`http swapi.co/api/planets`).then(response=>{
+    this.setState({myTeam: response.data});
+  })
+    console.log(this.state.myTeam)
+  }
+
+  filterTeam= filteredTeam=>{
+
+  }
   render(){
+    const{myTeam, filteredTeam} = this.state;
     return(
       <div>
         <Header />
-        <Search />
+        <Search 
+        myTeam={myTeam}
+        filterTeam={this.filterTeam}
+        />
         <Team 
         teamList={this.state.myTeam}
         />
