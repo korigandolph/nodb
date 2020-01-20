@@ -49,8 +49,9 @@ class Search extends Component{
 
             <select value={this.state.filterKey} onChange={this.selectFilterKey} name='filterKey'>
                     <option value=''>Select Category</option>
-                    <option value='name'>Name</option>
                     <option value='team'>Team</option>
+                    <option value='name'>Name</option>
+                    <option value='name'>Position</option>
                 </select>
                 <input name='input' value={this.state.input} onChange={e=>this.filteredTeamList(e)}/>
                 <button onClick={()=> this.props.submit(this.state.input)}>Submit</button>

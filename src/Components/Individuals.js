@@ -6,8 +6,8 @@ function Individuals (props){
 
     return (
 
-        <div>
-            <div>{team.name}</div>
+        <div id="player-name">
+            {/* <div>{team.name}</div> */}
             <div onClick={(e)=>addFn({first_name: first_name, last_name: last_name, id:id})}>{first_name}</div>
             <div>{last_name}</div>
         </div>

@@ -20,8 +20,8 @@ class Team extends Component{
             )
         })
         return(
-            <div>
-
+            <div id="display-team">
+                
                 {displayTeam}
             </div>
         )

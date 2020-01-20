@@ -3,7 +3,8 @@ import axios from 'axios';
 import './App.css';
 import Team from './Components/Team';
 import Header from './Components/Header';
-import Search from './Components/Search'
+import Search from './Components/Search';
+import Footer from './Components/Footer'
 
 
 class App extends Component{
@@ -83,11 +84,17 @@ class App extends Component{
         submit={this.submit}
         addFn={this.addPlayerToTeam}
         />
+        <div id= "team">
+        <img id= "basketball-img" src="http://cdn.onlinewebfonts.com/svg/img_531320.png" alt="basketball"/>
+          <h1>MY TEAM</h1>
+          <img id= "basketball-img" src="http://cdn.onlinewebfonts.com/svg/img_531320.png" alt="basketball"/>
+        </div>
         <Team 
         myTeam={myTeam}
         deleteFn={this.deletePlayerFromTeam}
         saveFn={this.editPlayerOnTeam}
         />
+        <Footer />
       </div>
     )
   }

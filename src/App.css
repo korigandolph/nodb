@@ -10,12 +10,58 @@ header{
   padding: 0px 20px;
 }
 
-#header-words{
+footer{
+  height: 90px;
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+#header{
   font-weight: bold;
-  font-size: 70px;
+  font-size: 60px;
   color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#header-header{
+  font-size: 20px;
 }
 
 #nba-logo{
   height: 70px;
+}
+
+#nba-logo-footer{
+  height: 60px;
+}
+
+#team{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+#basketball-img{
+  height: 40px;
+  padding: 20px;
+}
+#player-name{
+  display: flex;
+}
+
+#display-team{
+  color: darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
 }
