@@ -3,37 +3,34 @@
 }
 
 header{
-  height: 100px;
+  height: 80px;
   background-color: darkblue;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
+  color: white;
 }
 
+#header-words{
+  font-weight: bold;
+  font-size: 60px;
+  display: flex;
+}
+#login{
+  height: 50px;
+}
+#nba-logo{
+  height: 70px;
+}
 footer{
-  height: 90px;
+  height: 7git stat0px;
   background-color: darkblue;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 20px;
-}
-
-#header{
-  font-weight: bold;
-  font-size: 60px;
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-#header-header{
-  font-size: 20px;
-}
-
-#nba-logo{
-  height: 70px;
+  margin: 20px 0px;
 }
 
 #nba-logo-footer{
